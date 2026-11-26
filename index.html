@@ -1,147 +1,910 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Nahid Hasan Sheikh | Digital Marketer & Local SEO Expert</title>
-<meta name="description" content="Nahid Hasan Sheikh is a professional digital marketer and local SEO expert. Get found on Google Maps, grow with Meta Ads and use AI to save time.">
-<meta name="theme-color" content="#099CC4">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nahid Digital AI | Digital Marketing & Local SEO</title>
+
+<meta name="description" content="Grow your business with Local SEO, Google Business Profile, Meta Ads and AI Marketing.">
+
 <link rel="icon" href="assets/logo-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{scroll-behavior:smooth}
+
+body{
+    font-family:'Figtree',sans-serif;
+    background:#EAEDED;
+    color:#0F1111;
+}
+
+a{text-decoration:none;color:inherit}
+
+.container{
+    width:92%;
+    max-width:1400px;
+    margin:auto;
+}
+
+/* HEADER */
+
+.header{
+    background:#131921;
+    color:white;
+    padding:14px 0;
+}
+
+.header-main{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo img{
+    width:160px;
+    max-height:55px;
+    object-fit:contain;
+}
+
+.location{
+    font-size:12px;
+    color:#ccc;
+}
+
+.location b{
+    display:block;
+    color:white;
+    font-size:14px;
+}
+
+.search{
+    display:flex;
+    flex:1;
+    max-width:650px;
+    height:42px;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.search select{
+    width:100px;
+    border:0;
+    padding:8px;
+    background:#E6E6E6;
+}
+
+.search input{
+    flex:1;
+    min-width:0;
+    border:0;
+    outline:0;
+    padding:10px;
+    font-size:15px;
+}
+
+.search button{
+    width:50px;
+    border:0;
+    background:#FEBE10;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.header-contact{
+    font-size:12px;
+}
+
+.header-contact b{
+    display:block;
+    font-size:14px;
+}
+
+.hire-btn{
+    background:#FFD814;
+    color:#111;
+    padding:11px 20px;
+    border-radius:25px;
+    font-weight:700;
+    font-size:14px;
+}
+
+/* NAVIGATION */
+
+.nav{
+    background:#232F3E;
+    color:white;
+}
+
+.nav-inner{
+    display:flex;
+    gap:30px;
+    align-items:center;
+    padding:13px 0;
+    overflow-x:auto;
+}
+
+.nav a{
+    font-size:14px;
+    font-weight:600;
+    white-space:nowrap;
+}
+
+.nav a:hover{color:#FEBE10}
+
+/* HERO */
+
+.hero{
+    background:linear-gradient(110deg,#172B46,#235B78);
+    color:white;
+    padding:75px 0;
+}
+
+.hero-content{
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:50px;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:48px;
+    line-height:1.15;
+    margin-bottom:20px;
+}
+
+.hero h1 span{color:#FFCC33}
+
+.hero p{
+    color:#e5eaf0;
+    font-size:17px;
+    line-height:1.8;
+    max-width:650px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    margin-top:28px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 25px;
+    border-radius:5px;
+    font-weight:700;
+}
+
+.btn-yellow{
+    background:#FFD814;
+    color:#111;
+}
+
+.btn-outline{
+    border:1px solid white;
+    color:white;
+}
+
+.hero-image{
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 10px 35px #0004;
+}
+
+.hero-image img{
+    width:100%;
+    max-height:350px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.hero-image h3{
+    color:#131921;
+    margin-top:12px;
+}
+
+/* BENEFITS */
+
+.benefits{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin:25px auto;
+}
+
+.benefit{
+    background:white;
+    padding:22px 15px;
+    border-radius:7px;
+    text-align:center;
+}
+
+.benefit h3{
+    font-size:25px;
+    color:#007185;
+    margin-bottom:8px;
+}
+
+.benefit p{
+    font-size:13px;
+    color:#565959;
+}
+
+/* SECTION */
+
+.section{
+    margin:25px auto;
+}
+
+.section-heading{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:18px;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.section-heading h2{
+    font-size:25px;
+}
+
+.section-heading a{
+    color:#007185;
+    font-size:14px;
+}
+
+/* SERVICES */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.service-card{
+    background:white;
+    border-radius:8px;
+    padding:25px;
+    transition:.3s;
+    border:1px solid #ddd;
+}
+
+.service-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px #0002;
+}
+
+.service-icon{
+    width:65px;
+    height:65px;
+    background:#EAF5F7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:12px;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.service-card h3{
+    font-size:20px;
+    margin-bottom:12px;
+}
+
+.service-card p{
+    color:#565959;
+    font-size:14px;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.service-card a{
+    display:inline-block;
+    color:#007185;
+    font-weight:700;
+    font-size:14px;
+}
+
+/* FEATURE */
+
+.feature{
+    background:white;
+    padding:40px;
+    border-radius:8px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+    align-items:center;
+}
+
+.feature h2{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.feature p{
+    line-height:1.8;
+    color:#565959;
+}
+
+.feature ul{
+    padding-left:20px;
+    line-height:2.3;
+    color:#333;
+}
+
+/* PROCESS */
+
+.process{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.process-card{
+    background:white;
+    padding:28px;
+    border-radius:8px;
+    border-top:4px solid #FEBE10;
+}
+
+.process-card span{
+    font-size:35px;
+    font-weight:800;
+    color:#007185;
+}
+
+.process-card h3{
+    margin:12px 0;
+}
+
+/* ABOUT */
+
+.about{
+    background:white;
+    padding:40px;
+    border-radius:8px;
+    display:grid;
+    grid-template-columns:280px 1fr;
+    align-items:center;
+    gap:35px;
+}
+
+.about img{
+    width:100%;
+    border-radius:10px;
+}
+
+.about h2{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.about p{
+    line-height:1.8;
+    color:#565959;
+    margin-bottom:15px;
+}
+
+.tags{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    list-style:none;
+}
+
+.tags li{
+    background:#EAF5F7;
+    padding:9px 14px;
+    border-radius:20px;
+    font-size:13px;
+    color:#007185;
+    font-weight:600;
+}
+
+/* CONTACT */
+
+.contact{
+    background:white;
+    padding:40px;
+    border-radius:8px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.contact h2{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.contact p{
+    color:#565959;
+    line-height:1.7;
+}
+
+.contact-info{
+    margin-top:25px;
+    display:grid;
+    gap:15px;
+}
+
+.contact-info a{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:6px;
+}
+
+.contact-info small{
+    display:block;
+    color:#777;
+    margin-bottom:5px;
+}
+
+.contact form label{
+    display:block;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.contact input,
+.contact textarea{
+    display:block;
+    width:100%;
+    padding:13px;
+    border:1px solid #888;
+    border-radius:5px;
+    margin-top:7px;
+    font:inherit;
+}
+
+.contact textarea{
+    height:120px;
+    resize:vertical;
+}
+
+.contact button{
+    border:0;
+    cursor:pointer;
+    width:100%;
+}
+
+/* FOOTER */
+
+footer{
+    background:#131A22;
+    color:white;
+    padding:40px 0;
+    margin-top:30px;
+}
+
+.footer-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+footer img{
+    width:150px;
+}
+
+footer p{
+    color:#ccc;
+    font-size:13px;
+}
+
+footer nav{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+footer nav a{
+    font-size:13px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+    .header-main{flex-wrap:wrap}
+    .search{order:3;max-width:100%;flex-basis:100%}
+    .hero-content{grid-template-columns:1fr}
+    .hero h1{font-size:38px}
+    .services{grid-template-columns:repeat(2,1fr)}
+    .benefits{grid-template-columns:repeat(2,1fr)}
+}
+
+@media(max-width:600px){
+    .container{width:94%}
+    .location,.header-contact{display:none}
+    .logo img{width:125px}
+    .hire-btn{padding:10px 13px}
+    .nav-inner{gap:20px}
+    .hero{padding:50px 0}
+    .hero h1{font-size:32px}
+    .hero p{font-size:15px}
+    .services,.process{grid-template-columns:1fr}
+    .feature,.about,.contact{grid-template-columns:1fr;padding:23px}
+    .about img{max-width:250px}
+    .benefits{gap:10px}
+    .benefit{padding:17px 8px}
+    .section-heading h2{font-size:21px}
+    footer nav{gap:12px}
+}
+</style>
 </head>
+
 <body>
 
-<header>
-  <div class="wrap nav">
-    <a href="#top" aria-label="Nahid Digital AI home"><img src="assets/logo.png" alt="Nahid Digital AI"></a>
-    <ul id="menu">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#process">Process</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a class="btn btn-p" href="#contact">Hire me</a>
-    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="menu" onclick="var m=document.getElementById('menu');this.setAttribute('aria-expanded',m.classList.toggle('open'))">&#9776;</button>
-  </div>
-</header>
+<!-- HEADER -->
+<header class="header">
+<div class="container header-main">
 
-<main id="top">
-<div class="hero">
-  <div class="wrap">
-    <div>
-      <h1>Get found by customers <span>searching near you.</span></h1>
-      <p class="lead">I'm Nahid Hasan Sheikh, a digital marketer and local SEO expert. I help local businesses show up on Google Maps and search, then turn that attention into calls, messages and sales.</p>
-      <div class="cta">
-        <a class="btn btn-p" href="#contact">Get a free audit</a>
-        <a class="btn btn-o" href="#services">See services</a>
-      </div>
-      <div class="who">
-        <img src="assets/profile.jpg" alt="Nahid Hasan Sheikh">
-        <div><b>Nahid Hasan Sheikh</b><small>Digital Marketer &amp; Local SEO Expert</small></div>
-      </div>
-    </div>
-    <figure class="serp" aria-label="Illustration of a local search result">
-      <div class="q">&#128269; best service near me</div>
-      <div class="map" aria-hidden="true"><i class="pin"></i><i class="pin"></i><i class="pin"></i><i class="pin me"></i></div>
-      <div class="row top"><span class="n">1</span><div><b>Your business</b><div class="bar"></div></div><span class="up">&#9650;</span></div>
-      <div class="row"><span class="n">2</span><div><div class="bar" style="margin:0"></div><div class="bar"></div></div></div>
-      <div class="row"><span class="n">3</span><div><div class="bar" style="margin:0"></div><div class="bar"></div></div></div>
-      <figcaption>Illustration: the goal is the top of the map results.</figcaption>
-    </figure>
-  </div>
+<a class="logo" href="#home">
+<img src="assets/logo.png" alt="Nahid Digital AI">
+</a>
+
+<div class="location">
+Delivering digital growth
+<b>For Local Businesses</b>
 </div>
 
-<section id="services">
-  <div class="wrap">
-    <div class="head">
-      <h2>Services built around getting you customers</h2>
-      <p>Local search comes first. The other services support it.</p>
-    </div>
-    <div class="feature">
-      <div>
-        <h3>Local SEO</h3>
-        <p>The core of my work. I make sure people who search for what you sell, in your area, find you first and trust what they see.</p>
-      </div>
-      <ul>
-        <li>Google Business Profile setup and optimization</li>
-        <li>Local keyword research and service pages</li>
-        <li>Citations, reviews and local ranking tracking</li>
-      </ul>
-    </div>
-    <div class="svc"><h3>Website &amp; on-page SEO</h3><p>Clear page structure, fast loading and content that answers what customers ask, so search engines understand your business.</p></div>
-    <div class="svc"><h3>Meta Ads</h3><p>Facebook and Instagram campaigns with a clear audience, offer and budget, tracked by the results you care about.</p></div>
-    <div class="svc"><h3>AI content</h3><p>Posts, captions and page copy planned with AI tools and edited by a person, so it stays accurate and sounds like you.</p></div>
-    <div class="svc"><h3>Lead generation</h3><p>Landing pages and follow-up routines that turn enquiries into booked calls and customers.</p></div>
-    <div class="svc"><h3>Marketing automation</h3><p>Simple workflows that handle reporting, replies and reminders so your team spends time on customers.</p></div>
-  </div>
+<form class="search" id="searchForm">
+<select aria-label="Search category">
+<option>All Services</option>
+<option>Local SEO</option>
+<option>Meta Ads</option>
+<option>Web Design</option>
+</select>
+<input type="search" id="searchInput" placeholder="Search digital marketing services...">
+<button type="submit">⌕</button>
+</form>
+
+<div class="header-contact">
+Need Help?
+<b>+880 1757-925193</b>
+</div>
+
+<a class="hire-btn" href="#contact">Hire Me</a>
+
+</div>
+</header>
+
+<!-- NAV -->
+<nav class="nav">
+<div class="container nav-inner">
+<a href="#home">Home</a>
+<a href="#services">All Services</a>
+<a href="#services">Local SEO</a>
+<a href="#services">Google Business</a>
+<a href="#services">Meta Ads</a>
+<a href="#about">About Me</a>
+<a href="#process">My Process</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<main id="home">
+
+<!-- HERO -->
+<section class="hero">
+<div class="container hero-content">
+
+<div>
+<h1>Grow Your Business With <span>Smart Digital Marketing.</span></h1>
+
+<p>
+I'm Nahid Hasan Sheikh, a Digital Marketer and Local SEO Expert.
+I help businesses get more visibility on Google, attract customers
+and generate quality leads using modern marketing strategies and AI.
+</p>
+
+<div class="hero-buttons">
+<a href="#contact" class="btn btn-yellow">Get Free SEO Audit →</a>
+<a href="#services" class="btn btn-outline">Explore Services</a>
+</div>
+</div>
+
+<div class="hero-image">
+<img src="assets/profile.jpg" alt="Nahid Hasan Sheikh">
+<h3>Nahid Hasan Sheikh</h3>
+<p>Digital Marketer & Local SEO Expert</p>
+</div>
+
+</div>
 </section>
 
-<section id="process" class="steps">
-  <div class="wrap">
-    <div class="head"><h2>How we work together</h2><p>Three steps, with measurable results at each one.</p></div>
-    <ol>
-      <li><h3>Audit</h3><p>I review your website, Google profile, competitors and how customers find you today.</p></li>
-      <li><h3>Build</h3><p>I fix the foundations: profile, pages, content and ads, in the order that brings results fastest.</p></li>
-      <li><h3>Improve</h3><p>I track calls, direction requests and leads, then adjust based on what the numbers show.</p></li>
-    </ol>
-  </div>
+<div class="container">
+
+<!-- BENEFITS -->
+<section class="benefits">
+<div class="benefit">
+<h3>SEO</h3>
+<p>Improve Google Visibility</p>
+</div>
+<div class="benefit">
+<h3>Ads</h3>
+<p>Reach More Customers</p>
+</div>
+<div class="benefit">
+<h3>AI</h3>
+<p>Work Smarter & Faster</p>
+</div>
+<div class="benefit">
+<h3>Leads</h3>
+<p>Generate More Enquiries</p>
+</div>
 </section>
 
-<section id="about" class="about">
-  <div class="wrap">
-    <img src="assets/profile.jpg" alt="Portrait of Nahid Hasan Sheikh">
-    <div>
-      <h2>Hi, I'm Nahid.</h2>
-      <p>I'm a professional digital marketer and local SEO specialist. I work with shops, clinics, service providers and online brands that need to be found by the right people in their city or region.</p>
-      <p>I keep reports simple and promises honest. You'll always know what I'm doing, why, and what changed.</p>
-      <ul class="tags"><li>Local SEO</li><li>Google Business Profile</li><li>Meta Ads</li><li>AI content</li><li>Automation</li></ul>
-    </div>
-  </div>
+<!-- SERVICES -->
+<section class="section" id="services">
+
+<div class="section-heading">
+<h2>Explore My Digital Marketing Services</h2>
+<a href="#contact">Get a Quote →</a>
+</div>
+
+<div class="services">
+
+<div class="service-card" data-service="local seo google maps">
+<div class="service-icon">📍</div>
+<h3>Local SEO</h3>
+<p>Rank your business on Google Maps and local search results. Get discovered by customers in your area.</p>
+<a href="#contact">Get This Service →</a>
+</div>
+
+<div class="service-card" data-service="website seo web design">
+<div class="service-icon">🌐</div>
+<h3>Website & On-Page SEO</h3>
+<p>Build SEO-friendly websites with optimized content, better structure and improved performance.</p>
+<a href="#contact">Get This Service →</a>
+</div>
+
+<div class="service-card" data-service="meta ads facebook instagram">
+<div class="service-icon">📢</div>
+<h3>Meta Ads</h3>
+<p>Facebook and Instagram advertising campaigns to reach the right audience and generate sales.</p>
+<a href="#contact">Get This Service →</a>
+</div>
+
+<div class="service-card" data-service="ai content writing">
+<div class="service-icon">🤖</div>
+<h3>AI Content Creation</h3>
+<p>Create professional social media posts, captions and marketing content using AI tools.</p>
+<a href="#contact">Get This Service →</a>
+</div>
+
+<div class="service-card" data-service="lead generation">
+<div class="service-icon">🎯</div>
+<h3>Lead Generation</h3>
+<p>Find potential customers and generate quality business leads through strategic marketing.</p>
+<a href="#contact">Get This Service →</a>
+</div>
+
+<div class="service-card" data-service="marketing automation">
+<div class="service-icon">⚙️</div>
+<h3>Marketing Automation</h3>
+<p>Automate marketing tasks, reporting, customer follow-ups and business workflows.</p>
+<a href="#contact">Get This Service →</a>
+</div>
+
+</div>
 </section>
 
-<section id="contact" class="contact">
-  <div class="wrap">
-    <div>
-      <div class="head"><h2>Let's grow your business</h2><p>Tell me about your business and your goal. I'll reply with next steps.</p></div>
-      <div class="ch">
-        <a href="https://t.me/NahidDigitalAI"><small>Telegram</small><b>@NahidDigitalAI</b></a>
-        <a href="https://wa.me/8801757925193"><small>WhatsApp</small><b>+880 1757-925193</b></a>
-        <a href="mailto:nahiddigitalai@gmail.com"><small>Email</small><b>nahiddigitalai@gmail.com</b></a>
-      </div>
-    </div>
-    <form id="f">
-      <label>Name<input name="name" required autocomplete="name"></label>
-      <label>Email<input name="email" type="email" required autocomplete="email"></label>
-      <label>How can I help?<textarea name="msg" required></textarea></label>
-      <button class="btn btn-p" type="submit">Send message</button>
-    </form>
-  </div>
+<!-- FEATURE -->
+<section class="section">
+<div class="feature">
+<div>
+<h2>Get More Customers From Google Maps</h2>
+<p>
+Your potential customers are searching online every day.
+With proper Local SEO and Google Business Profile optimization,
+your business can improve its local visibility and attract more enquiries.
+</p>
+<br>
+<a href="#contact" class="btn btn-yellow">Start Growing →</a>
+</div>
+
+<ul>
+<li>Google Business Profile Setup</li>
+<li>Google Maps Optimization</li>
+<li>Local Keyword Research</li>
+<li>Business Citations</li>
+<li>Review Management</li>
+<li>Local Ranking Tracking</li>
+</ul>
+</div>
 </section>
+
+<!-- PROCESS -->
+<section class="section steps" id="process">
+<div class="section-heading">
+<h2>How I Work With Clients</h2>
+</div>
+
+<div class="process">
+
+<div class="process-card">
+<span>01</span>
+<h3>Audit & Research</h3>
+<p>I analyze your website, business profile and competitors to identify growth opportunities.</p>
+</div>
+
+<div class="process-card">
+<span>02</span>
+<h3>Strategy & Execution</h3>
+<p>I develop and implement the right digital marketing strategy for your business.</p>
+</div>
+
+<div class="process-card">
+<span>03</span>
+<h3>Track & Improve</h3>
+<p>I monitor performance, analyze results and improve campaigns based on data.</p>
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+
+<img src="assets/profile.jpg" alt="Nahid Hasan Sheikh">
+
+<div>
+<h2>Meet Nahid Hasan Sheikh</h2>
+
+<p>
+I'm a professional Digital Marketer and Local SEO Specialist.
+I help shops, clinics, service providers and online businesses
+grow their online presence through effective digital marketing.
+</p>
+
+<p>
+My goal is simple: Help businesses reach the right customers,
+increase visibility and generate more leads.
+</p>
+
+<ul class="tags">
+<li>Local SEO</li>
+<li>Google Business Profile</li>
+<li>Meta Ads</li>
+<li>AI Marketing</li>
+<li>Lead Generation</li>
+</ul>
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+
+<div>
+<h2>Let's Grow Your Business!</h2>
+<p>Have a project in mind? Contact me today and let's discuss how I can help your business grow.</p>
+
+<div class="contact-info">
+
+<a href="https://t.me/NahidDigitalAI">
+<small>Telegram</small>
+<b>@NahidDigitalAI</b>
+</a>
+
+<a href="https://wa.me/8801757925193">
+<small>WhatsApp</small>
+<b>+880 1757-925193</b>
+</a>
+
+<a href="mailto:nahiddigitalai@gmail.com">
+<small>Email</small>
+<b>nahiddigitalai@gmail.com</b>
+</a>
+
+</div>
+</div>
+
+<form id="contactForm">
+
+<label>
+Your Name
+<input name="name" required placeholder="Enter your name">
+</label>
+
+<label>
+Your Email
+<input name="email" type="email" required placeholder="Enter your email">
+</label>
+
+<label>
+Your Message
+<textarea name="msg" required placeholder="Tell me about your project"></textarea>
+</label>
+
+<button class="btn btn-yellow" type="submit">Send Message →</button>
+
+</form>
+
+</section>
+
+</div>
 </main>
 
+<!-- FOOTER -->
 <footer>
-  <div class="wrap">
-    <img src="assets/logo.png" alt="Nahid Digital AI">
-    <p>&copy; <span id="y">2026</span> Nahid Hasan Sheikh. Grow smarter with AI.</p>
-    <nav aria-label="Social links">
-      <a href="https://facebook.com/NahidDigitalAI">Facebook</a>
-      <a href="https://linkedin.com/in/NahidDigitalAI">LinkedIn</a>
-      <a href="https://youtube.com/@NahidDigitalAI">YouTube</a>
-      <a href="https://github.com/NahidDigitalAI">GitHub</a>
-    </nav>
-  </div>
+<div class="container footer-inner">
+
+<img src="assets/logo.png" alt="Nahid Digital AI">
+
+<p>© <span id="year"></span> Nahid Hasan Sheikh. All Rights Reserved.</p>
+
+<nav>
+<a href="https://facebook.com/NahidDigitalAI">Facebook</a>
+<a href="https://linkedin.com/in/NahidDigitalAI">LinkedIn</a>
+<a href="https://youtube.com/@NahidDigitalAI">YouTube</a>
+<a href="https://github.com/NahidDigitalAI">GitHub</a>
+</nav>
+
+</div>
 </footer>
 
 <script>
-document.getElementById('y').textContent=new Date().getFullYear();
-document.querySelectorAll('#menu a').forEach(function(a){a.onclick=function(){document.getElementById('menu').classList.remove('open')}});
-document.getElementById('f').onsubmit=function(e){
-  e.preventDefault();var d=new FormData(this);
-  location.href='mailto:nahiddigitalai@gmail.com?subject='+encodeURIComponent('Website enquiry from '+d.get('name'))+'&body='+encodeURIComponent(d.get('msg')+'\n\n'+d.get('name')+' ('+d.get('email')+')');
-};
+
+// Dynamic Year
+document.getElementById('year').textContent =
+new Date().getFullYear();
+
+// Service Search
+document.getElementById('searchForm').addEventListener('submit',function(e){
+    e.preventDefault();
+
+    let keyword = document.getElementById('searchInput').value.toLowerCase();
+
+    document.querySelectorAll('.service-card').forEach(card=>{
+        let text = (card.innerText + ' ' + card.dataset.service).toLowerCase();
+
+        card.style.display = text.includes(keyword) ? 'block' : 'none';
+    });
+
+    document.getElementById('services').scrollIntoView();
+});
+
+// Contact Form
+document.getElementById('contactForm').addEventListener('submit',function(e){
+    e.preventDefault();
+
+    let data = new FormData(this);
+
+    let name = data.get('name');
+    let email = data.get('email');
+    let msg = data.get('msg');
+
+    let subject = encodeURIComponent('Website enquiry from ' + name);
+
+    let body = encodeURIComponent(
+        msg + '\n\n' + name + '\n' + email
+    );
+
+    window.location.href =
+    'mailto:nahiddigitalai@gmail.com?subject=' + subject + '&body=' + body;
+});
+
 </script>
+
 </body>
 </html>
